@@ -1,0 +1,65 @@
+﻿InfinityFlow v0.6.0 - Third-Party Notices
+========================================
+
+InfinityFlow itself is licensed under the MIT License (see LICENSE).
+
+This product includes the following open-source software components.
+Full license texts are provided in the LICENSES/ directory.
+
+1. Mermaid.js v11.17.2
+   Copyright (c) 2014-2026 Knut Sveidqvist and contributors
+   (https://github.com/mermaid-js/mermaid)
+   License: MIT (LICENSES/mermaid-MIT.txt)
+   Bundled as mermaid.min.js inside the executable.
+
+2. wry v0.57.0
+   Copyright (c) Tauri Contributors (tauri-apps/wry)
+   License: Apache-2.0 OR MIT
+   (LICENSES/wry-APACHE.txt, LICENSES/wry-MIT.txt)
+   https://github.com/tauri-apps/wry
+
+3. tao v0.37.0
+   Copyright (c) Tauri Contributors (tauri-apps/tao)
+   License: Apache-2.0 (LICENSES/tao-APACHE.txt)
+   https://github.com/tauri-apps/tao
+
+4. rfd v0.17.2
+   Copyright (c) The rfd Developers (PolyMeilex/rfd)
+   License: MIT (LICENSES/rfd-MIT.txt)
+   https://github.com/PolyMeilex/rfd
+
+5. ico v0.3.0
+   License: MIT (LICENSES/ico-MIT.txt)
+   https://github.com/ericseppanen/ico
+
+6. serde_json v1.0.151
+   Copyright (c) The serde-rs Developers
+   License: MIT OR Apache-2.0
+   (LICENSES/serde_json-MIT.txt, LICENSES/serde_json-APACHE.txt)
+   https://github.com/serde-rs/json
+
+7. winresource v0.1.31
+   License: MIT (LICENSES/winresource-MIT.txt)
+   https://github.com/kryptan/winresource
+
+8. ureq v3.4.x (with native-tls)
+   Copyright (c) The ureq Developers (algesten/ureq)
+   License: MIT OR Apache-2.0
+   https://github.com/algesten/ureq
+   Used only for optional LLM API calls (DeepSeek, OpenAI, Anthropic,
+   Google Gemini, Ollama, LM Studio, or a custom OpenAI-compatible
+   endpoint). No network request is made unless the user runs the AI
+   Generate feature or the connection test.
+
+Additionally, transitive Rust dependencies (approximately 200 crates)
+are used under MIT / Apache-2.0 compatible licenses. Their full license
+texts are available from their respective crates.io package pages and
+from the exact versions recorded in Cargo.lock. To regenerate a complete
+bundle of transitive license texts for a release, run:
+
+    cargo install cargo-about
+    cargo about generate about.hbs > LICENSES/transitive.html
+
+Microsoft Edge WebView2 Runtime is required at runtime but is NOT
+redistributed with this product. It is provided separately by Microsoft
+and is subject to Microsoft's own terms.
